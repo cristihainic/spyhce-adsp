@@ -3,21 +3,20 @@ import re
 
 class Anagramator:
 
+    anagrame = dict()
+
     def __init__(self, file):
         self.file = file
 
     def h(self, word):
-        self.word = word
-        return ''.join(sorted(self.word))
+        return ''.join(sorted(word))
 
     def read_content(self):
         with open(self.file, 'r') as fin:
             self.file_content = ''.join(fin.readlines())
-        return self.file_content
 
     def process(self):
         self.file_content = filter(lambda v: v is not '', re.split("[, \-!?.:\n]+", self.file_content))
-        self.anagrame = dict()
         for word in self.file_content:
             key = Anagramator(self.file).h(word)
             self.anagrame[key] = self.anagrame.get(key, 0) + 1

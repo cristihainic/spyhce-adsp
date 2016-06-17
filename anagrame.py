@@ -1,8 +1,4 @@
-"""
-#Homework 1 (Spyhce) submission from Cristian Hainic -- IAP 1st year, 2nd semester
-
-"""
-
+# Homework 1 (Spyhce) submission from Cristian Hainic -- IAP 1st year, 2nd semester
 
 import re
 
@@ -13,9 +9,12 @@ Make sure the file is in the root directory of the project!\n")
 with open(str(to_open), "r") as file:
     words = file.read().split()
     words = ' '.join(words)
-    no_punctuation = re.sub('[^\w ]', '', words)
+    no_punctuation = re.sub('[^\w ]', '', words) # regex magic stolen from Stackoverflow :)
     words = no_punctuation.split()
 
+# Each word in the file will be a key in a dictionary.
+# If the word has no anagrams in the file, its value in the dictionary will be an empty list
+# If the word has anagrams in the file, its value in the dictionary will be a list containing all anagrams as strings.
 anagrams = {}
 
 # duplicate list against which I confront each sorted word in the original list
@@ -63,3 +62,4 @@ print_anagrams(anagrams)
 print("\nEnter a word you'd like to search anagrams for in the text:")
 userinput = input("> ")
 search_anagrams(userinput, anagrams)
+

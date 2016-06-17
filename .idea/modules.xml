@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../21mai2016/.idea/21mai2016.iml" filepath="$PROJECT_DIR$/../21mai2016/.idea/21mai2016.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../4iunie2016/.idea/4iunie2016.iml" filepath="$PROJECT_DIR$/../4iunie2016/.idea/4iunie2016.iml" />
       <module fileurl="file://$PROJECT_DIR$/../HelloWorld/.idea/HelloWorld.iml" filepath="$PROJECT_DIR$/../HelloWorld/.idea/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tema1.iml" filepath="$PROJECT_DIR$/.idea/Tema1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../anagrameoop/.idea/anagrameoop.iml" filepath="$PROJECT_DIR$/../anagrameoop/.idea/anagrameoop.iml" />
     </modules>
   </component>
 </project>
